@@ -14,7 +14,7 @@ wechat:
 ```
 接收前端传入的wx.login得到的code，以及微信自带的getPhoneNumer的e.detail.code，封装成requestbody
 ```
-	phone, openid, err := wxApplets.Login(requestBody.WxLoginCode, requestBody.PhoneCode)
+phone, openid, err := wxApplets.Login(requestBody.WxLoginCode, requestBody.PhoneCode)
 ```
 如上调用即可
 注：目前仅为方便自己以后其他业务方面调用，但也欢迎大家测试是否存在安全漏洞，提出issue.
